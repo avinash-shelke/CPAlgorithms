@@ -57,7 +57,7 @@ int main()
         cout<<fact[n]<<endl;
         
     }
-    // O(N)+O(T) = 10^5 + 10^5= 10^5 -> not possible to run in 1 second
+    // O(N)+O(T) = 10^5 + 10^5= 10^5 -> can easily execute in 1 second
     
     return 0;
 }
