@@ -1,0 +1,1 @@
+1. https://www.geeksforgeeks.org/why-global-array-has-a-larger-size-than-the-local-array/
