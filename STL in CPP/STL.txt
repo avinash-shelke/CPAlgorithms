@@ -1,0 +1,43 @@
+(STL) Standard Template Library: provides a set of programming tools to implement algorithms and 
+data structures like vectors, lists, queues, etc.
+STL implements these data structures and algorithms using general-purpose classes and functions 
+that have been tested rigorously.
+
+STL has 4 components:
+1. Containers
+2. Iterators
+3. Algorithms
+4. Functors
+
+1. Containers: Data structures hai jo pre-implemented hai STL ke andar.
+	Types:
+	I) Sequential Container: vectors, stack, queue, pair(it is not a container it is just a class).
+	II) Ordered Container: maps, multimap, set, multiset.
+	III) Unordered Container: unordered map, unordered set. 
+	There are many other types of containers also.
+	
+	IV) Nested Containers: containers inside the containers.
+		- vector<vector<int>> 
+		- map<int,int> , map<int, vector<int>> , map<vector<int>, vector<int>>
+		- set<pair<int,string>>
+		- vector<map<int,set<int>>> 
+2. Iterators: Iterators STL containers ke memory address ko point karne ke liye use hote hai.
+	- begin(), end()
+	- generally declared as, vector<int>:: iterator it;
+	- How to write it in short?
+	- Continuity and discontinuity in iterators.
+
+3. Algorithms: STL consists of algorithms which are most optimized version.
+	- upper bound : just greater element in log(N) complexity since implemented using binary search.
+	- lower bound : just lower element in log(N) complexity since implemented using binary search.
+	- sort(comparator)
+	- max_element
+	- min_element
+	- accumulate : to get the sum of array elements.
+	- reverse : reverse array or string
+	- count : element ka count milega
+	- find : element ki position find kar sakte hai
+	- next_permutation : lexicographically next permutation
+	- prev_permutation : lexicographically prev permutation
+
+4. Functors: Classes which can act as functions.
