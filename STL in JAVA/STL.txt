@@ -1,0 +1,75 @@
+JAVA Collection Framework:
+
+1. Implementation of Data Structures:
+
+List: Arraylist, LinkedList, Vector, Stack
+Set: HashSet, TreeSet, LinkedHashSet
+Queue: LinkedList, ArrayDeque, PriorityQueue
+Deque: LinkedList, ArrayDeque
+Map: HashMap, TreeMap, LinkedHashMap
+
+2. Collections Class (Implementation of Basic Algorithm):
+
+binarySearch(), sort(), max(), min(), reverse(), fill()
+
+----------------------------------------------------------
+List:
+ArrayList:  It is an implementation of dynamic sized arrays. Don't have to 
+worry about the specifying size.
+
+LinkedList: It is an Implementation of doubly linked list.
+
+-> Vector and Stack are legacy classes.
+Vector: Dynamic sized array.
+Stack: Implementation of LIFO structure. Stack class inherits from Vector 
+class. It is a thread-safe class.
+
+Difference b/w Vector and ArrayList:
+Vector is a legacy class. Vector is a thread-safe class. 
+
+Stack and Vector are avoided in single threaded environment as they might 
+cause overhead due to concurrency.
+Inplace of Vector -> ArrayList is used.
+Inplace of Stack -> ArrayDeque is used.
+
+----------------------------------------------------------
+Set:
+HashSet: It can store collection of keys , that can be searched, inserted
+or deleted. It has internal implementation as hashing. Order in which 
+elements are inserted is not retained. Average TC=O(1)
+
+TreeSet: It can store collection of keys, that can be searched, inserted 
+or deleted. It has internal implementation as self balancing binary search
+tree (Red-Black Tree). Average TC=O(log(n))
+
+LinkedHashSet: It is comb. of HashSet that store collection of keys along 
+with it ,it uses linked list to store the elements in the order they are
+inserted into it.Order in which elements are inserted is retained.
+
+-----------------------------------------------------------
+Queue: (FIFO)
+LinkedList: We can have queue implementations in linked list. It is 
+implemented by linked list intenally.
+
+ArrayDeque: It can be used as queue. It is implemented by array internally.
+
+PriorityQueue: Implementation of Heap data structure. 
+-----------------------------------------------------------
+Deque:
+LinkedList: doubly linked list can be used to implement doubly ended queue.
+
+ArrayDeque: Array is used to implement doubly ended queue.
+-----------------------------------------------------------
+Map: 
+HashMap: It can store collection of key-value pairs, that can be searched,
+inserted or deleted. It has internal implementation as hashing. Order in which 
+elements are inserted is not retained. Average TC=O(1)
+
+TreeMap: It can store collection of key-value pairs, that can be searched,
+inserted or deleted. It has internal implementation as self balancing binary search
+tree (Red-Black Tree). Average TC=O(log(n))
+
+LinkedHashMap: It is a comb. of HashMap that store collection of key-value
+pairs, and it uses linked list to store the elements in the order they are
+inserted into it. Order in which elements are inserted is retained.
+-----------------------------------------------------------
