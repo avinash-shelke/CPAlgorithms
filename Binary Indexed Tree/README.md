@@ -15,11 +15,13 @@
 
 - Segment trees are bounded by the O(4logn) whereas binary indexed trees are upper bounded by O(logn) only. For auxiliary space in segment trees we reqire an array of size 4n whereas in binary indexed trees an array of size n+1.
 
-- Binary indexed tree can also be used for range queries. 
+- Binary indexed tree can also be used for range queries. <br>
     for ex:
     rangeSum(i,j) = prefixSum(j) - prefixSum(i-1)
 
 - Binary Indexed trees cannot be applied to all  the questions that are solvable using segement trees. For ex. if we have to find the max/min element within a range, we cannot convert such queries into prefix sum format. But can only be solved using segment trees.
 
 
+- Binary Indexed Tree (Prefix Sum): <br>
+    ![alt text](image.png)
 
